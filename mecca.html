@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Brian's Geolocated content with Argon + A-Frame</title>
+    <title>Brian's Mecca Finder</title>
   	<meta name="keywords" content="argon, aframe, augmented reality, web, javascript, geolocation, geospatial ar">
     <meta name="description" content="Geolocation Argon + A-Frame">
     <!-- Origin Trial Token, feature = WebVR, origin = https://argonjs.io, expires = 2017-06-06 -->
@@ -59,6 +59,7 @@
     <ar-scene>
       <a-assets>
         <img id="buzzpin" src="../resources/textures/buzz-pin.png">
+        <img id="meccaicon" src="../resources/textures/mecca-icon-01.png">
       </a-assets>
       <ar-geopose id="GT" lla="-84.394539 33.772501" userotation="false"> 
          <a-entity fixedsize="20" billboard>
@@ -66,6 +67,7 @@
            <a-entity css-object="div: #gtdiv" scale="0.02 0.02 0.02" position="0 4 0" showdistance="Tech Tower @ Georgia Tech<br>Atlanta, GA, USA<br>It is "></a-entity>
         </a-entity>
       </ar-geopose>
+      <!--
       <ar-geopose id="London" lla="-0.076057 51.507953" userotation="false"> 
          <a-entity fixedsize="20" billboard>
            <a-entity css-object="div: #londonpin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
@@ -83,7 +85,7 @@
            <a-entity css-object="div: #tokyopin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
            <a-entity css-object="div: #tokyodiv" scale="0.02 0.02 0.02" position="0 3 0" showdistance="Imperial Palace<br>Tokyo, Japan<br>It is "></a-entity>
         </a-entity>
-      </ar-geopose>
+      </ar-geopose>-->
       <ar-geopose id="Mecca" lla=" 21.410069 39.859583" userotation="false"> 
          <a-entity fixedsize="20" billboard>
            <a-entity css-object="div: #meccapin" scale="0.05 0.05 0.05" position="0 0 0"></a-entity>
@@ -91,14 +93,5 @@
         </a-entity>
       </ar-geopose>
     </ar-scene>
-  </body>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-63191442-2', 'auto');
-  ga('send', 'pageview');
-</script>  
+  </body> 
 </html>
